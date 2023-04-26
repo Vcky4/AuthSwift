@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04610ACD29F969FC00DE9988 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04610ACC29F969FC00DE9988 /* LocationManager.swift */; };
 		0482477F29F886C9003B6998 /* AuthSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482477E29F886C9003B6998 /* AuthSwiftApp.swift */; };
 		0482478129F886C9003B6998 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482478029F886C9003B6998 /* ContentView.swift */; };
 		0482478329F886CC003B6998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0482478229F886CC003B6998 /* Assets.xcassets */; };
 		0482478629F886CC003B6998 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0482478529F886CC003B6998 /* Preview Assets.xcassets */; };
+		0482478D29F8871C003B6998 /* Content-Viewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482478C29F8871C003B6998 /* Content-Viewmodel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0445891129F9794B00361CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		04610ACC29F969FC00DE9988 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		0482477B29F886C9003B6998 /* AuthSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0482477E29F886C9003B6998 /* AuthSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSwiftApp.swift; sourceTree = "<group>"; };
 		0482478029F886C9003B6998 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0482478229F886CC003B6998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0482478529F886CC003B6998 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0482478C29F8871C003B6998 /* Content-Viewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content-Viewmodel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +56,13 @@
 		0482477D29F886C9003B6998 /* AuthSwift */ = {
 			isa = PBXGroup;
 			children = (
+				0445891129F9794B00361CED /* Info.plist */,
 				0482477E29F886C9003B6998 /* AuthSwiftApp.swift */,
 				0482478029F886C9003B6998 /* ContentView.swift */,
 				0482478229F886CC003B6998 /* Assets.xcassets */,
 				0482478429F886CC003B6998 /* Preview Content */,
+				0482478C29F8871C003B6998 /* Content-Viewmodel.swift */,
+				04610ACC29F969FC00DE9988 /* LocationManager.swift */,
 			);
 			path = AuthSwift;
 			sourceTree = "<group>";
@@ -137,6 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04610ACD29F969FC00DE9988 /* LocationManager.swift in Sources */,
+				0482478D29F8871C003B6998 /* Content-Viewmodel.swift in Sources */,
 				0482478129F886C9003B6998 /* ContentView.swift in Sources */,
 				0482477F29F886C9003B6998 /* AuthSwiftApp.swift in Sources */,
 			);
@@ -269,6 +279,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AuthSwift/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AuthSwift/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Your location is needed";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location id required";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +310,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AuthSwift/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AuthSwift/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Your location is needed";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location id required";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
